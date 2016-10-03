@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UEFA</title>
+    <link rel="stylesheet" href="Styles/style.css" media="screen" title="no title">
+  </head>
+  <body>
+      <div id="wrapper">
+        <header>
+          <div class="logo-container">
+            <a target="_blank" href="http://www.uefa.com/">
+              <img src="images/uefa-logo.png" alt="logo" />
+            </a>
+          </div>
+
+          <div class="menu-container">
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a id="outer-link" href="#">UEFA Champions League</a>
+                  <div class="dropdown-menu">
+                    <span href="">UEFA Champions League</span>
+                    <a id="inner-link" href="#">Teams</a>
+                    <a id="inner-link" href="#">Standings</a>
+                    <a id="inner-link" href="#">Statistics</a>
+                    <a id="inner-link" href="#">Finals</a>
+                    <a id="inner-link" href="#">History</a>
+                  </div>
+                </li>
+                <li><a href="#">UEFA Europa League</a></li>
+                <li><a href="#">Team of the year</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <main>
+          <table>
+            <tr class="first-row">
+              <th colspan="6">Group E</th>
+            </tr>
+            <tr class="second-row">
+              <th>#</th>
+              <th>Team</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>Points</th>
+            </tr>
+            <tr class="third-row">
+              <td class="col1">1</td>
+              <td class="col2">&nbsp;FC Barcelona</td>
+              <td class="col3">4</td>
+              <td class="col4">2</td>
+              <td class="col5">0</td>
+              <td class="col6">14</td>
+            </tr>
+            <tr class="forth-row">
+              <td>2</td>
+              <td class="col2">&nbsp;AS Roma</td>
+              <td>1</td>
+              <td>3</td>
+              <td>2</td>
+              <td>6</td>
+            </tr>
+            <tr class="fifth-row">
+              <td>3</td>
+              <td class="col2">&nbsp;Bayer 04 Leverkusen</td>
+              <td>1</td>
+              <td>3</td>
+              <td>2</td>
+              <td>6</td>
+            </tr>
+            <tr class="sixth-row">
+              <td>4</td>
+              <td class="col2">&nbsp;FC BATE Borisov</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>5</td>
+            </tr>
+          </table>
+
+          <form class="">
+            <fieldset>
+              <legend>Register new sponsor</legend>
+              <label for="company">Company<span>&ast;</span></label>
+              <input type="text" name="company" placeholder="Enter your company name" required="required"/>
+
+              <label for="password">Password<span>&ast;</span></label>
+              <input type="password" name="password" required="required"/>
+
+              <label for="confirm">Confirm password<span>&ast;</span></label>
+              <input type="password" name="confirm" required="required"/>
+
+              <div class="cb-container">
+                <div class="">
+                  <label for="country">Country</label>
+                  <input id="form-country" type="text" name="country" placeholder="Qatar"/>
+                </div>
+
+                <div class="bf-container">
+                  <label>Business field</label>
+                  <div class="checkbox-container">
+                    <input type="checkbox" name="field" value="Oil"/>&nbsp;Oil<br/>
+                    <input type="checkbox" name="field" value="Airlines">&nbsp;Airlines<br/>
+                    <input type="checkbox" name="field" value="Gold">&nbsp;Gold<br/>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset-offer">
+              <legend>What do you offer?</legend>
+              <input type="number" name="offer" min="0" />
+              <p>&ast;In million dollars</p>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Submit" />
+            <input type="reset" name="reset" value="Reset" />
+          </form>
+
+          <article class="">
+            <header><h1>New sponsors</h1></header>
+
+            <section class="images">
+              <div class="">
+                <img src="images/titanic.png" alt="logo" />
+              </div>
+              <div class="">
+                <img src="images/pumba.jpg" alt="logo" />
+              </div>
+              <div class="unique-size-image">
+                <img class="unique-size-image" src="images/nissan-logo.png" alt="logo" />
+              </div>
+            </section>
+
+            <section>
+              <p>&nbsp;&nbsp;The president of UEFA announced the newly signed sponsors of UEFA Champions League. The new sponsors will bring to the tournament <a href="#">Read more...</a></p>
+              <p>Written by Unknown Author / <time pubdate="pubdate">16.12.2015</time></p>
+            </section>
+          </article>
+        </main>
+
+        <footer>
+          <div class="menu-footer">
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">UEFA Champions League</a></li>
+                <li><a href="#">UEFA Europa League</a></li>
+                <li><a href="#">Team of the year</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="paragraph-footer">
+            <p>© 1998-2015 UEFA. All rights reserved.</p>
+            <p>The UEFA word, the UEFA logo and all marks related to UEFA competitions, are protected by trade marks and/or copyright of UEFA. No use for commercial purposes may be made of such trade marks. Use of UEFA.com signifies your agreement to the Terms and Conditions and Privacy Policy.</p>
+          </div>
+
+          <div class="footer">
+            <div class="images1"><a href="#"></a></div>
+            <div class="images2"><a href="#"></a></div>
+            <div class="images3"><a href="#"></a></div>
+          </div>
+
+        </footer>
+      </div>
+  </body>
+</html>
