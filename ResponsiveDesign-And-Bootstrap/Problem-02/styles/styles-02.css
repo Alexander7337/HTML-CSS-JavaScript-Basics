@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: verdana;
+  background-image: url(../images/background-flowers.png);
+}
+
+#wrapper {
+  text-align: left;
+  margin: 0 auto;
+  width: 960px;
+}
+
+#wrapper > header {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  border: 1px solid black;
+}
+
+header > h1 > a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+header > h1 > a > img {
+  float: left;
+  width: 240px;
+  height: 60px;
+}
+
+header > h1 > a > span {
+  float: right;
+  margin-bottom: 10px;
+  width: 340px;
+  text-align: right;
+  color: #000;
+}
+
+header > nav {
+  float: right;
+}
+
+header > nav > ul {
+  list-style: none;
+}
+
+header > nav > ul > li {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  background: #EB2A7B;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+header > nav > ul > li > a {
+  vertical-align: middle;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header::after {
+  content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	zoom: 1;
+}
+
+.left {
+  float: left;
+  width: 180px;
+  height: 320px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+aside > ul {
+  list-style: none;
+}
+
+section {
+  float: left;
+  margin: 0 12px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+section article div {
+  width: 560px;
+  padding-bottom: 10px;
+}
+
+section article header h1 {
+  text-align: left;
+  margin: 0 2%;
+  margin-top: 10px;
+}
+
+section article div img {
+  width: 130px;
+  height: 120px;
+}
+
+.right {
+  float: right;
+  width: 185px;
+  height: 320px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.right > ul > li {
+  margin: 5px;
+}
+
+footer {
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer > h2 {
+    margin: 10px;
+}
+
+footer > h2 > a {
+  color: #000;
+  background-color: #rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 780px) and (max-width: 960px) {
+  body,
+  #wrapper {
+    width: 100%;
+  }
+  header {
+    width: 99%;
+  }
+  section {
+    width: 55%;
+    height: 55%;
+    margin: auto 2%;
+  }
+  section article div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  aside.left,
+  aside.right {
+    width: 20%;
+    height: 100%;
+  }
+  #wrapper aside.left > ul,
+  #wrapper aside.right > ul {
+    height: 400px;
+  }
+  section article div img {
+    width: 120px;
+    height: 100px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 779px) {
+  body,
+  #wrapper {
+    width: 100%;
+  }
+  #wrapper {
+    display: flex;
+    flex-flow: column;
+  }
+  #wrapper > header {
+    width: 98%;
+  }
+  header > nav {
+    float: none;
+    text-align: center;
+  }
+  header > h1 > a > span {
+    float: none;
+    width: 360px;
+    font-size: 1.2em;
+    text-align: left;
+    margin-right: 40px;
+  }
+  aside.left,
+  aside.right {
+    float:none;
+    width: 99%
+  }
+  section {
+    width: 99%;
+    margin: auto 0;
+    order: 1;
+  }
+  aside.left {
+    width: 96%;
+    order: 2;
+    margin-top: 10px;
+    padding: 10px;
+    height: 190px;
+  }
+  aside.right {
+    width: 94%;
+    order: 3;
+    margin-top: 10px;
+    padding: 15px;
+    height: 100px;
+  }
+  footer {
+    width: 99%;
+    order: 4;
+  }
+  section article div img {
+    width: 180px;
+    margin-top: 5px;
+  }
+  section article div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 639px) {
+  body,
+  #wrapper {
+      width: 100%;
+  }
+  #wrapper {
+    display: flex;
+    flex-flow: column;
+  }
+  #wrapper > header {
+    width: 98%;
+  }
+  header > h1 > a {
+    display: block;
+  }
+  #wrapper > header > nav > ul > li {
+    display: block;
+    width: 98%;
+  }
+  header > h1 > a > img {
+      float: none;
+      display: block;
+      width: 90%;
+      text-align: center;
+  }
+  header > h1 > a > span {
+      float: none;
+      display: block;
+      font-size: 1em;
+      text-align: center;
+  }
+  header > nav {
+    float: none;
+  }
+  aside.left,
+  aside.right {
+    float:none;
+    width: 99%
+  }
+  section {
+    width: 99%;
+    margin: auto 0;
+    order: 1;
+  }
+  aside.left {
+    width: 96%;
+    order: 2;
+    margin-top: 10px;
+    padding: 10px;
+    height: 190px;
+  }
+  aside.right {
+    width: 95%;
+    order: 3;
+    margin-top: 10px;
+    padding: 8px;
+    height: 100px;
+    overflow: scroll;
+  }
+  footer {
+    width: 99%;
+    order: 4;
+  }
+  section article div img {
+    width: 180px;
+    margin-top: 5px;
+  }
+  section article div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
