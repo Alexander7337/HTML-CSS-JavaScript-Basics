@@ -1,0 +1,20 @@
+#sidebar {
+  margin-top: 70px;
+  width: 250px;
+  text-align: left;
+}
+
+.col-xs-12 {
+  margin-top: 70px;
+}
+
+.jumbotron {
+  padding: 20px 10px;
+  width: 800px;
+  margin-left: 100px;
+}
+
+.articles,
+footer {
+  margin-left: 90px;
+}
