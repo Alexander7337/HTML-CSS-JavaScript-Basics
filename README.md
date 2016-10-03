@@ -6,3 +6,5 @@ Works in this repo apply the following web technologies:
 - Responsive design
 - Bootstrap
 
+*Wiki section
+
