@@ -1,0 +1,62 @@
+.hero-head {
+  background: url(../images/aero-blue-abstract-wallpaper.jpg)
+}
+
+@media (max-width:1200px){
+  .wrap,
+  .wrapper{
+    width: 100%;
+  }
+  .content-wrap{
+    display: block;
+  }
+  .main-foot .wrapper{
+    display: block;
+  }
+  address, nav {
+    vertical-align: top;
+  }
+  .main-foot address, .main-foot nav {
+    width: 40%;
+    display: inline-block;
+  }
+  .copyright{
+    margin-top: -10px;
+  }
+}
+
+@media (max-width:700px){
+  .wrap{
+    text-align: center;
+
+  }
+  .hero-head .goal{
+    float: none;
+    margin: auto auto;
+  }
+  .main-nav-trigger {
+    display: block;
+    float: right;
+  }
+  .main-nav{
+    display: none;
+  }
+  #wrapper .hero-head{
+    background-image: url("fake");
+    background-color: black;
+  }
+  .hero-head {
+    background: black;
+  }
+  .main-foot address, .main-foot nav{
+    width: 100%;
+  }
+
+  .main-foot .bottom .copyright {
+    float: none;
+  }
+
+  .main-foot .bottom {
+  	text-align: center;
+  }
+}
