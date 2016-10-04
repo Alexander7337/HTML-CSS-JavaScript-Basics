@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Edit User Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>EDIT USER</h1>
+      </header>
+
+      <form class="">
+        <div class="left-container">
+          <label for="user">Username</label>
+          <input type="text" name="user" placeholder="&nbsp;&nbsp;Name" />
+
+          <label for="mail">Email</label>
+          <input type="email" name="mail" />
+
+          <label for="phone">Phone number</label>
+          <input type="tel" name="phone" />
+
+          <p id="as-label">User type</p>
+          <div class="radio-container">
+            <section class="">
+              <input type="radio" name="B" checked="checked"><span>&nbsp;<strong>B</strong>roadband</span>
+            </section>
+            <section class="">
+              <input type="radio" name="R" checked="checked"><span>&nbsp;<strong>R</strong>adio</span>
+            </section>
+
+          </div>
+
+          <label for="chp">Change Password</label>
+          <input type="password" name="chp" />
+
+          <label for="">Groups</label>
+          <div class="checkbox-container">
+            <div class="">
+              <input type="checkbox" /> <span>&nbsp;<strong>A</strong>ll Groups</span>
+            </div>
+            <div class="">
+              <input type="checkbox" /> <span>&nbsp;<strong>G</strong>roup 1</span>
+            </div>
+            <div class="">
+              <input type="checkbox" /> <span>&nbsp;<strong>G</strong>roup 2</span>
+            </div>
+            <div class="">
+              <input type="checkbox" /> <span>&nbsp;<strong>G</strong>roup 3</span>
+            </div>
+            <div class="">
+              <input type="checkbox" /> <span>&nbsp;<strong>G</strong>roup 4</span>
+            </div>
+          </div>
+
+          <p>Contacts</p>
+          <br/>
+          <p><a href="#">See Contacts list</a></p>
+
+          <input type="reset" name="name" value="CANCEL" />
+          <input type="submit" name="name" value="SAVE" />
+        </div>
+
+        <div class="right-container">
+          <input type="checkbox" /> <span>&nbsp;<strong>D</strong>eactivate</span>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
